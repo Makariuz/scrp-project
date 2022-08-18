@@ -41,31 +41,7 @@ try {
   } catch (error) {
     console.log(error, error.message);
   }
-   /* try {
-    axios(website).then((res) => {
-      const data = res.data;
-      const $ = cheerio.load(data);
-
-        
-      $('.ct-price-formatted', data).each(function () {
-        const price = $(this).text();
-
-        const url = $(this).find('a').attr('href');
-  
-        content.push({
-          price,
-          
-        });
-  
-        app.get('/', (req, res) => {
-          res.json(content);
-
-        });
-      });
-    });
-  } catch (error) {
-    console.log(error, error.message);
-  }  */
+   
 
 app.listen(PORT, () => {
   console.log(`server is running on PORT:${PORT}`);
